@@ -1,5 +1,6 @@
 package org.ap.qa.selenium;
 
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -8,7 +9,9 @@ public class ChromeActions {
     
     // open chrome browser
     public static void openChromeBrowser() {
-        driver = new ChromeDriver();   
+	ChromeOptions options = new ChromeOptions();
+	options.addArguments("--Headless=new");
+        driver = new ChromeDriver(options);   
         driver.manage().window().maximize();
     }
 
