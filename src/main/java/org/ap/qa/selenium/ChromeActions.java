@@ -9,10 +9,10 @@ public class ChromeActions {
     
     // open chrome browser
     public static void openChromeBrowser() {
+
 	ChromeOptions options = new ChromeOptions();
-	options.addArguments("--Headless=new");
-        driver = new ChromeDriver(options);   
-        driver.manage().window().maximize();
+	options.addArguments("--headless=new");
+	driver = new ChromeDriver(options);
     }
 
     // maximize the browser window    
