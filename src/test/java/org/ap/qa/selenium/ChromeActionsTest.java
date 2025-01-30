@@ -22,5 +22,6 @@ public class ChromeActionsTest {
     @Test(dependsOnMethods = "testOpenChromeBrowser" , priority = 4)
     public void testCloseChromeBrowser() {
         ChromeActions.closeChromeBrowser();
+        // Remove this comment >> created for running the pipeline only.
     }
 }
